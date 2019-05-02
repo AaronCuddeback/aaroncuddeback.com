@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import HeadlineWithFocus from '../components/HeadlineWithFocus';
+import HeadlineWithFocus from "../components/HeadlineWithFocus";
 
 const Index = props => {
   return (
@@ -21,7 +21,7 @@ const Index = props => {
           c-content-box__subheadline--with-button
         `}
       >
-        I build web apps, and I love coding.
+        and I love coding.
       </h2>
     </div>
   );
