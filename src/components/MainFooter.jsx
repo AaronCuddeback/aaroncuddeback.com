@@ -15,21 +15,24 @@ const MainFooter = () => (
       and{" "}
       <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
         React
-      </a>. Hosted on{" "}
+      </a>
+      . Hosted on{" "}
       <a
         href="https://www.netlify.com/"
         target="_blank"
         rel="noopener noreferrer"
       >
         Netlify
-      </a>. The code is open source and available at{" "}
+      </a>
+      . The code is open source and available at{" "}
       <a
-        href="https://github.com/greglobinski/playground"
+        href="https://github.com/AaronCuddeback/GatsbyHome"
         target="_blank"
         rel="noopener noreferrer"
       >
         Github
-      </a>.
+      </a>
+      .
     </p>
   </div>
 );
