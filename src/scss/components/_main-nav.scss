@@ -11,8 +11,8 @@
 }
 
 .c-main-nav__elem {
-  border-radius: .2em; 
-  display: inline-block; 
+  border-radius: 0.2em;
+  display: inline-block;
 
   &:hover {
     background: $nav-link-hover-bg-color;
@@ -24,10 +24,10 @@
   color: $nav-link-color;
   display: inline-block;
   font-size: 1em;
-  padding: .6em .5em; 
+  padding: 0.6em 0.5em;
   text-decoration: none;
 
-  &:hover {      
+  &:hover {
     border: none;
   }
 
@@ -48,9 +48,9 @@
 
 .c-main-nav__elem--close-link {
   background: #fff;
-  border: 1px dashed $nav-link-active-color;  
-  margin-left: .5em;
-  
+  border: 1px dashed $nav-link-active-color;
+  margin-left: 0.5em;
+
   svg {
     color: lighten($nav-link-active-icon-color, 20%);
   }
@@ -61,33 +61,32 @@
     svg {
       color: $nav-link-active-color;
     }
-  } 
+  }
 }
 
 .c-main-nav__text {
-  display: none;       
+  display: none;
   vertical-align: middle;
 }
 
 .c-main-nav--is-hidden {
-
   .c-main-nav__elem {
     visibility: hidden;
   }
   .c-main-nav__elem--close-link {
     visibility: visible;
-    border-bottom: 1px solid #fff;    
+    border-bottom: 1px solid #fff;
   }
 }
 
 .c-main-nav--is-open {
   align-content: stretch;
   border: 1px dashed $nav-link-active-icon-color;
-  border-radius: .3em;
+  border-radius: 0.3em;
   background: $body-bg-color;
   flex-direction: column;
   margin-top: -3px;
-  padding: .5rem .7rem;
+  padding: 0.5rem 0.7rem;
   position: absolute;
   right: 0;
   top: 100%;
@@ -101,30 +100,38 @@
 
   .c-main-nav__link {
     display: block;
-    padding: .6em .3em;    
+    padding: 0.6em 0.3em;
   }
 
   .c-main-nav__text {
     display: inline-block;
-    padding: 0 0 0 .7em;    
+    padding: 0 0 0 0.7em;
   }
 
   .c-main-nav__elem--close-link {
     display: none;
   }
 }
-    
+
+.c-main-nav__blog {
+  text-indent: 3em;
+}
 
 @media screen and (min-width: $media-width-M) {
-  .c-main-nav__text  {
+  .c-main-nav__text {
     display: inline-block;
-    padding: 0 0 0 .5em;
+    padding: 0 0 0 0.5em;
   }
   .c-main-nav__elem--close-link {
-    display: none; 
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .c-main-nav__elem--hide-blog {
+    display: none;
   }
 }
 
 @media screen and (min-width: $media-width-XL) {
-
-}    
+}
