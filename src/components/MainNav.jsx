@@ -66,7 +66,7 @@ class MainNav extends React.Component {
             </ListLink>
           ))}
           <a
-            href="http://blog.aaroncuddeback.com"
+            href="https://blog.aaroncuddeback.com"
             className="c-main-nav__link c-main-nav__elem"
           >
             <FaBook />
@@ -96,7 +96,7 @@ class MainNav extends React.Component {
             </ListLink>
           ))}
           <a
-            href="http://blog.aaroncuddeback.com"
+            href="https://blog.aaroncuddeback.com"
             className="c-main-nav__link c-main-nav__elem"
           >
             <FaBook />
