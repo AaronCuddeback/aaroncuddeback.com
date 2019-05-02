@@ -1,8 +1,8 @@
-import React from "react";
-import HeadlineWithFocus from "../components/HeadlineWithFocus";
-import Obfuscate from "react-obfuscate";
-import { FaEnvelopeO, FaTwitter, FaGithub } from "react-icons/lib/fa/";
-import Helmet from "react-helmet";
+import React from 'react';
+import HeadlineWithFocus from '../components/HeadlineWithFocus';
+import Obfuscate from 'react-obfuscate';
+import { FaEnvelopeO, FaTwitter, FaGithub } from 'react-icons/lib/fa/';
+import Helmet from 'react-helmet';
 
 export default props => {
   return (
@@ -15,26 +15,26 @@ export default props => {
       <ul className="c-contact-list">
         <li className="c-contact-list__item">
           <FaEnvelopeO />
-          <Obfuscate email="greglobinski@gmail.com" />
+          <Obfuscate email="aaron@midlifecoder.dev" />
         </li>
         <li className="c-contact-list__item">
           <FaTwitter />
           <a
-            href="https://twitter.com/greglobinski"
+            href="https://twitter.com/aaroncuddeback"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @greglobinski
+            @aaroncuddeback
           </a>
         </li>
         <li className="c-contact-list__item">
           <FaGithub />
           <a
-            href="https://github.com/greglobinski"
+            href="https://github.com/aaroncuddeback"
             target="_blank"
             rel="noopener noreferrer"
           >
-            greglobinski
+            aaroncuddeback
           </a>
         </li>
       </ul>

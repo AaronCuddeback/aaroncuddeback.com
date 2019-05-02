@@ -6,76 +6,86 @@ import { FaPaperPlaneO, FaWrench } from 'react-icons/lib/fa';
 const ForHomePageContent = (
   <div className="c-remark-screen__message">
     <p>
-      <b>I'm glad</b><br /> that you're interested in my stuff.
+      <b>I'm glad</b>
+      <br /> that you're interested in my work.
     </p>
     <p>
-      There's something I want you to remember while you're going over the website.
+      There's something I want you to remember while you're going over the
+      website.
     </p>
     <p>
-      At present, I'm open to <b>full time on-site job</b> offers (Warsaw or London).
+      Currently, I'm open to <b>full time job</b> offers.
     </p>
     <p>
-      If you realize that I would be a good fit, drop me 
-      a message at <b><Obfuscate email='greglobinski@gmail.com' /></b>.
+      If you believe I would be a good fit, drop me a message at{' '}
+      <b>
+        <Obfuscate email="aaron@midlifecoder.dev" />
+      </b>
+      .
     </p>
-    <p>
-      Thank you. Now, you're free to go further.
-    </p>
+    <p>Thank you. Now, you're free to go further.</p>
   </div>
 );
 
 const ForContactPageContent = (
   <div className="c-remark-screen__message">
     <p>
-      <b>Hi there</b><br /> Before you leave
+      <b>Hi there</b>
+      <br /> Before you leave
     </p>
     <p>
-      I want you to remember that at present, I am open to <b>full time on-site job</b> offers (Warsaw or London).
+      I want you to remember that currently, I am open to <b>full time job</b>{' '}
+      offers.
     </p>
     <p>
-      If you feel that you want me on your team, drop me 
-      a message at <b><Obfuscate email='greglobinski@gmail.com' /></b>.
+      If you feel that I would be qualified, drop me a message at{' '}
+      <b>
+        <Obfuscate email="aaron@midlifecoder.dev" />
+      </b>
+      .
     </p>
+    <p />
     <p>
-      
-    </p>
-    <p>
-      Thank you<br />
-      <b>Greg</b>
+      Thank you
+      <br />
+      <b>Aaron</b>
     </p>
   </div>
 );
 
-const RemarkScreen = (props) => { 
-  const links = [ 
-    { path: 'toolbox', icon: FaWrench }, 
+const RemarkScreen = props => {
+  const links = [
+    { path: 'toolbox', icon: FaWrench }
     //{ path: 'playground', icon: FaPaperPlaneO }
   ];
 
   return (
-    <div className={`c-remark-screen ${props.isActive && 'c-remark-screen--is-active'}`}>
-      {props.locationPathName === '/' ? ForHomePageContent : ForContactPageContent}
-      {props.locationPathName === '/' &&
+    <div
+      className={`c-remark-screen ${props.isActive &&
+        'c-remark-screen--is-active'}`}
+    >
+      {props.locationPathName === '/'
+        ? ForHomePageContent
+        : ForContactPageContent}
+      {props.locationPathName === '/' && (
         <div className="c-remark-screen__links">
-          {
-            links.map((link) => (        
-              <Link 
-                key={link.path}
-                className="c-remark-screen__link" 
-                to={`/${link.path}/`}
-                onClick={props.onClick}
-                tabIndex={props.isActive ? '1' : '-1'}
-              >
-                <link.icon /> {link.path}
-              </Link>)
-            ) 
-          }
+          {links.map(link => (
+            <Link
+              key={link.path}
+              className="c-remark-screen__link"
+              to={`/${link.path}/`}
+              onClick={props.onClick}
+              tabIndex={props.isActive ? '1' : '-1'}
+            >
+              <link.icon /> {link.path}
+            </Link>
+          ))}
         </div>
-      }
+      )}
 
-      <div className="c-remark-screen__bg"></div>
+      <div className="c-remark-screen__bg" />
     </div>
-  )
+  );
 };
 
 export default RemarkScreen;
