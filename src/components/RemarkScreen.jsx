@@ -1,7 +1,7 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import Obfuscate from 'react-obfuscate';
-import { FaPaperPlaneO, FaWrench } from 'react-icons/lib/fa';
+import React from "react";
+import Link from "gatsby-link";
+import Obfuscate from "react-obfuscate";
+import { FaBook, FaWrench } from "react-icons/lib/fa";
 
 const ForHomePageContent = (
   <div className="c-remark-screen__message">
@@ -17,7 +17,7 @@ const ForHomePageContent = (
       Currently, I'm open to <b>full time job</b> offers.
     </p>
     <p>
-      If you believe I would be a good fit, drop me a message at{' '}
+      If you believe I would be a good fit, drop me a message at{" "}
       <b>
         <Obfuscate email="aaron@midlifecoder.dev" />
       </b>
@@ -34,11 +34,11 @@ const ForContactPageContent = (
       <br /> Before you leave
     </p>
     <p>
-      I want you to remember that currently, I am open to <b>full time job</b>{' '}
+      I want you to remember that currently, I am open to <b>full time job</b>{" "}
       offers.
     </p>
     <p>
-      If you feel that I would be qualified, drop me a message at{' '}
+      If you feel that I would be qualified, drop me a message at{" "}
       <b>
         <Obfuscate email="aaron@midlifecoder.dev" />
       </b>
@@ -55,19 +55,19 @@ const ForContactPageContent = (
 
 const RemarkScreen = props => {
   const links = [
-    { path: 'toolbox', icon: FaWrench }
-    //{ path: 'playground', icon: FaPaperPlaneO }
+    { path: "toolbox", icon: FaWrench }
+    // { path: "blog", icon: FaPaperPlaneO }
   ];
 
   return (
     <div
       className={`c-remark-screen ${props.isActive &&
-        'c-remark-screen--is-active'}`}
+        "c-remark-screen--is-active"}`}
     >
-      {props.locationPathName === '/'
+      {props.locationPathName === "/"
         ? ForHomePageContent
         : ForContactPageContent}
-      {props.locationPathName === '/' && (
+      {props.locationPathName === "/" && (
         <div className="c-remark-screen__links">
           {links.map(link => (
             <Link
@@ -75,15 +75,23 @@ const RemarkScreen = props => {
               className="c-remark-screen__link"
               to={`/${link.path}/`}
               onClick={props.onClick}
-              tabIndex={props.isActive ? '1' : '-1'}
+              tabIndex={props.isActive ? "1" : "-1"}
             >
               <link.icon /> {link.path}
             </Link>
           ))}
+          <a
+            href="https://blog.aaroncuddeback.com"
+            className="c-remark-screen__links"
+          >
+            <span className="c-remark-screen__link">
+              <FaBook />
+              Blog
+            </span>
+          </a>
         </div>
       )}
-
-      <div className="c-remark-screen__bg" />
+      <div className="c-remark-screen__links" />
     </div>
   );
 };
