@@ -65,7 +65,6 @@ class MainNav extends React.Component {
               <span className="c-main-nav__text">{link.text}</span>
             </ListLink>
           ))}
-          u
         </div>
       );
       mainNavModifierClassName = "c-main-nav--is-hidden";
