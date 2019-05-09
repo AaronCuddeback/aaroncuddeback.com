@@ -91,7 +91,7 @@ const RemarkScreen = props => {
           </a>
         </div>
       )}
-      <div className="c-remark-screen__links" />
+      {/* <div className="c-remark-screen__links" /> */}
     </div>
   );
 };

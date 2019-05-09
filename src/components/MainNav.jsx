@@ -34,7 +34,7 @@ class MainNav extends React.Component {
       links: [
         { to: "/", text: "Home", icon: FaMapMarker },
         { to: "/toolbox/", text: "Toolbox", icon: FaWrench },
-        { to: "/playground/", text: "Playground", icon: FaPaperPlaneO },
+        // { to: "/playground/", text: "Playground", icon: FaPaperPlaneO },
         { to: "/contact/", text: "Contact", icon: FaEnvelopeO }
       ],
       mainNavModifierClassName: "",
