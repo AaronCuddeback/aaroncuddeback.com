@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react';
+import Link from 'gatsby-link';
 import {
   FaMapMarker,
   FaEnvelopeO,
@@ -7,9 +7,10 @@ import {
   FaWrench,
   FaChevronDown,
   FaChevronUp,
-  FaBook
-} from "react-icons/lib/fa";
-import { TiCodeOutline } from "react-icons/lib/ti";
+  FaBook,
+  FaCalendar
+} from 'react-icons/lib/fa';
+import { TiCodeOutline } from 'react-icons/lib/ti';
 
 const ListLink = props => (
   <li className="c-main-nav__elem">
@@ -32,21 +33,21 @@ class MainNav extends React.Component {
     this.closeMenu = this.closeMenu.bind(this);
     this.state = {
       links: [
-        { to: "/", text: "Home", icon: FaMapMarker },
-        { to: "/toolbox/", text: "Toolbox", icon: FaWrench },
+        { to: '/', text: 'Home', icon: FaMapMarker },
+        { to: '/toolbox/', text: 'Toolbox', icon: FaWrench },
         // { to: "/playground/", text: "Playground", icon: FaPaperPlaneO },
-        { to: "/contact/", text: "Contact", icon: FaEnvelopeO }
+        { to: '/contact/', text: 'Contact', icon: FaEnvelopeO }
       ],
-      mainNavModifierClassName: "",
+      mainNavModifierClassName: '',
       mobileDetailsNav: null
     };
   }
 
   closeMenu() {
-    console.log("closeMenu()");
+    console.log('closeMenu()');
     if (this.state.mobileDetailsNav) {
       this.setState(() => ({
-        mainNavModifierClassName: "",
+        mainNavModifierClassName: '',
         mobileDetailsNav: null
       }));
     }
@@ -54,7 +55,7 @@ class MainNav extends React.Component {
 
   toggleMenu() {
     let mobileDetailsNav = null;
-    let mainNavModifierClassName = "";
+    let mainNavModifierClassName = '';
 
     if (!this.state.mobileDetailsNav) {
       mobileDetailsNav = (
@@ -72,9 +73,16 @@ class MainNav extends React.Component {
             <FaBook />
             <span className="c-main-nav__text"> Blog</span>
           </a>
+          <a
+            href="https://100daysofaaron.netlify.com/"
+            className="c-main-nav__link c-main-nav__elem"
+          >
+            <FaCalendar />
+            <span className="c-main-nav__text"> 100Days</span>
+          </a>
         </div>
       );
-      mainNavModifierClassName = "c-main-nav--is-hidden";
+      mainNavModifierClassName = 'c-main-nav--is-hidden';
     }
 
     this.setState(() => ({
@@ -101,6 +109,13 @@ class MainNav extends React.Component {
           >
             <FaBook />
             <span className="c-main-nav__elem--hide-blog"> Blog</span>
+          </a>
+          <a
+            href="https://100daysofaaron.netlify.com/"
+            className="c-main-nav__link c-main-nav__elem"
+          >
+            <FaCalendar />
+            <span className="c-main-nav__elem--hide-blog"> 100Days</span>
           </a>
           <li
             className="c-main-nav__elem c-main-nav__elem--close-link"
