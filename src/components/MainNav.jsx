@@ -8,7 +8,8 @@ import {
   FaChevronDown,
   FaChevronUp,
   FaBook,
-  FaCalendar
+  FaCalendar,
+  FaFileText
 } from 'react-icons/lib/fa';
 import { TiCodeOutline } from 'react-icons/lib/ti';
 
@@ -67,6 +68,13 @@ class MainNav extends React.Component {
             </ListLink>
           ))}
           <a
+            href="https://csv.aaroncuddeback.com"
+            className="c-main-nav__link c-main-nav__elem"
+          >
+            <FaFileText />
+            <span className="c-main-nav__text"> CSV</span>
+          </a>
+          <a
             href="https://blog.aaroncuddeback.com"
             className="c-main-nav__link c-main-nav__elem"
           >
@@ -103,6 +111,13 @@ class MainNav extends React.Component {
               <span className="c-main-nav__text">{link.text}</span>
             </ListLink>
           ))}
+          <a
+            href="https://csv.aaroncuddeback.com/"
+            className="c-main-nav__link c-main-nav__elem"
+          >
+            <FaFileText />
+            <span className="c-main-nav__elem--hide-blog"> CSV</span>
+          </a>
           <a
             href="https://blog.aaroncuddeback.com"
             className="c-main-nav__link c-main-nav__elem"
