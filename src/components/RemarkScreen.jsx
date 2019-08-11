@@ -19,7 +19,7 @@ const ForHomePageContent = (
     <p>
       If you believe I would be a good fit, drop me a message at{" "}
       <b>
-        <Obfuscate email="aaron@midlifecoder.dev" />
+        <Obfuscate email="aaron@urbanrisedesigns.com" />
       </b>
       .
     </p>
@@ -40,7 +40,7 @@ const ForContactPageContent = (
     <p>
       If you feel that I would be qualified, drop me a message at{" "}
       <b>
-        <Obfuscate email="aaron@midlifecoder.dev" />
+        <Obfuscate email="aaron@urbanrisedesigns.com" />
       </b>
       .
     </p>
