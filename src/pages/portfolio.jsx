@@ -14,7 +14,7 @@ export default props => {
       </HeadlineWithFocus>
       <ul>
         <li>
-          <img src="../src/images/pmu-artisticink.com.jpg" alt="Artistic Ink" />
+          <img src="./../images/pmu-artisticink.com.jpg" alt="Artistic Ink" />
         </li>
       </ul>
     </div>
