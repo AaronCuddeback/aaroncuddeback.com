@@ -1,17 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import Helmet from "react-helmet";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import Helmet from 'react-helmet';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../scss/main.scss';
+require('typeface-exo');
+require('typeface-roboto');
 
-import "../scss/main.scss";
-require("typeface-exo");
-require("typeface-roboto");
+import ActionButtonContainer from '../containers/ActionButtonContainer';
+import RemarkScreenContainer from '../containers/RemarkScreenContainer';
 
-import ActionButtonContainer from "../containers/ActionButtonContainer";
-import RemarkScreenContainer from "../containers/RemarkScreenContainer";
-
-import MainFooter from "../components/MainFooter";
-import MainHeader from "../components/MainHeader";
+import MainFooter from '../components/MainFooter';
+import MainHeader from '../components/MainHeader';
 
 class DefaultLayout extends React.Component {
   render() {
@@ -21,7 +21,7 @@ class DefaultLayout extends React.Component {
           title="Aaron Cuddeback"
           meta={[
             {
-              name: "description",
+              name: 'description',
               content: `I build web interfaces using: JavaScript, ES6, VueJS, HTML/CSS, Bootstrap,  React, Gatsby, Webpack ...`
             }
           ]}
@@ -29,14 +29,14 @@ class DefaultLayout extends React.Component {
 
         <div
           className={`l-page-container ${this.props.remarkScreenisActive &&
-            "is-blurred"}`}
+            'is-blurred'}`}
         >
           <MainHeader />
           <main className="l-main">{this.props.children()}</main>
           <MainFooter />
         </div>
-        {(this.props.location.pathname === "/" ||
-          this.props.location.pathname === "/contact/") && (
+        {(this.props.location.pathname === '/' ||
+          this.props.location.pathname === '/contact/') && (
           <ActionButtonContainer
             locationPathName={this.props.location.pathname}
           />

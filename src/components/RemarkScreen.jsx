@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Obfuscate from 'react-obfuscate';
-import { FaBook, FaWrench } from 'react-icons/lib/fa';
+import { FaBook, FaWrench, FaPaperPlaneO } from 'react-icons/lib/fa';
 
 const ForHomePageContent = (
   <div className="c-remark-screen__message">
@@ -55,8 +55,8 @@ const ForContactPageContent = (
 
 const RemarkScreen = props => {
   const links = [
+    { path: 'portfolio', icon: FaPaperPlaneO },
     { path: 'toolbox', icon: FaWrench }
-    // { path: "blog", icon: FaPaperPlaneO }
   ];
 
   return (

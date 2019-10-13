@@ -35,9 +35,9 @@ class MainNav extends React.Component {
     this.state = {
       links: [
         { to: '/', text: 'Home', icon: FaMapMarker },
+        { to: '/portfolio/', text: 'Portfolio', icon: FaPaperPlaneO },
         { to: '/toolbox/', text: 'Toolbox', icon: FaWrench },
         // { to: "/playground/", text: "Playground", icon: FaPaperPlaneO },
-        { to: '/portfolio/', text: 'Portfolio', icon: FaPaperPlaneO },
         { to: '/contact/', text: 'Contact', icon: FaEnvelopeO }
       ],
       mainNavModifierClassName: '',

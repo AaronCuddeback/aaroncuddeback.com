@@ -1,6 +1,6 @@
-import React from "react";
-
-import HeadlineWithFocus from "../components/HeadlineWithFocus";
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import HeadlineWithFocus from '../components/HeadlineWithFocus';
 
 const Index = props => {
   return (
