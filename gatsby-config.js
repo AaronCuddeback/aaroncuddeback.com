@@ -5,14 +5,12 @@ module.exports = {
   //   title: `GatsbyJS`,
   //   description: `A fantastic new static site generator.`,
   //   siteUrl: `https://www.gatsbyjs.org`
-  // },  
+  // },
   plugins: [
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
-        postCssPlugins: [
-          autoprefixer()
-        ],
+        postCssPlugins: [autoprefixer()],
         precision: 8
       }
     },
@@ -21,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-110088221-1"
+        trackingId: 'UA-110088221-1'
       }
     }
   ]
-}
+};

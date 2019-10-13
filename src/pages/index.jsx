@@ -1,11 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeadlineWithFocus from '../components/HeadlineWithFocus';
+import UseDarkMode from '../components/UseDarkMode';
 import { FaEnvelopeO, FaTwitter, FaGithub } from 'react-icons/lib/fa/';
 import { Container, Row, Col } from 'reactstrap';
 
 const Index = props => {
+  const [theme, toggleTheme] = UseDarkMode();
   return (
+    // <div className={`App ${theme}`}>
+    //   <div>
+    //     <button type="button" onClick={toggleTheme}>
+    //       Switch theme
+    //     </button>
+    //   </div>
     <div className="c-content-box">
       <h2>Hi, my name is Aaron</h2>
       <HeadlineWithFocus
@@ -49,6 +57,7 @@ const Index = props => {
         </Col>
       </Row>
     </div>
+    //</div>
   );
 };
 

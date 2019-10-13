@@ -13,6 +13,7 @@
     "bootstrap": "^4.3.1",
     "gatsby": "^1.9.73",
     "gatsby-link": "^1.6.22",
+    "gatsby-plugin-dark-mode": "^1.1.0",
     "gatsby-plugin-google-analytics": "^1.0.13",
     "gatsby-plugin-netlify": "^1.0.6",
     "gatsby-plugin-nprogress": "^1.0.7",

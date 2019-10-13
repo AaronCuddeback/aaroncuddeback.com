@@ -12,6 +12,7 @@
   padding: 0 1.2rem;
   transition: filter 0.5s, opacity 0.5s;
   width: 100%;
+  background: #000;
 }
 
 .l-main {
@@ -51,6 +52,107 @@
 li {
   list-style-type: none;
 }
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #8e43ad;
+}
+
+#___gatsby
+  > div
+  > div.l-page-container.false
+  > header
+  > div
+  > div
+  > ul
+  > li:nth-child(1)
+  > a {
+  background-color: black;
+}
+
+#___gatsby
+  > div
+  > div.l-page-container.false
+  > header
+  > div
+  > div
+  > ul
+  > li:nth-child(2)
+  > a {
+  background-color: black;
+}
+
+#___gatsby
+  > div
+  > div.l-page-container.false
+  > header
+  > div
+  > div
+  > ul
+  > li:nth-child(3)
+  > a {
+  background-color: black;
+}
+
+#___gatsby
+  > div
+  > div.l-page-container.false
+  > header
+  > div
+  > div
+  > ul
+  > li:nth-child(4)
+  > a {
+  background-color: black;
+}
+
+#___gatsby
+  > div
+  > div.l-page-container.false
+  > header
+  > div
+  > div
+  > ul
+  > a:nth-child(5):hover {
+  background-color: black;
+}
+
+#___gatsby
+  > div
+  > div.l-page-container.false
+  > header
+  > div
+  > div
+  > ul
+  > a:nth-child(6):hover {
+  background-color: black;
+}
+
+#___gatsby
+  > div
+  > div.l-page-container.false
+  > header
+  > div
+  > div
+  > ul
+  > a:nth-child(7):hover {
+  background-color: black;
+}
+
+// .l-page-container.dark {
+//   background: #000;
+//   color: #fff;
+//   transition: 0.3s all;
+// }
+
+// .l-page-container.light {
+//   background: #fff;
+//   color: #000;
+//   transition: 0.3s all;
+// }
 
 @media screen and (min-width: $media-width-S) {
   .l-page-container {
