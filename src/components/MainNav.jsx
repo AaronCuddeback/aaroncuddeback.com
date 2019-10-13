@@ -91,7 +91,7 @@ class MainNav extends React.Component {
           </a>
         </div>
       );
-      mainNavModifierClassName = 'c-main-nav--is-hidden';
+      mainNavModifierClassName = '';
     }
 
     this.setState(() => ({
