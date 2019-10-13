@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HeadlineWithFocus from '../components/HeadlineWithFocus';
+import { FaEnvelopeO, FaTwitter, FaGithub } from 'react-icons/lib/fa/';
+import { Container, Row, Col } from 'reactstrap';
 
 const Index = props => {
   return (
@@ -23,6 +25,29 @@ const Index = props => {
       >
         and I love coding.
       </h2>
+      <Row>
+        <Col xs="2" sm="1">
+          <li>
+            <a href="https://twitter.com/aaroncuddeback" target="_blank">
+              <FaTwitter />
+            </a>
+          </li>
+        </Col>
+        <Col xs="2" sm="1">
+          <li>
+            <a href="https://github.com/aaroncuddeback" target="_blank">
+              <FaGithub />
+            </a>
+          </li>
+        </Col>
+        <Col xs="2" sm="1">
+          <li>
+            <a href="mailto:aaron@aaroncuddeback.com" target="_blank">
+              <FaEnvelopeO />
+            </a>
+          </li>
+        </Col>
+      </Row>
     </div>
   );
 };
