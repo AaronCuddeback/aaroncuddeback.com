@@ -3,7 +3,7 @@ import HeadlineWithFocus from '../components/HeadlineWithFocus';
 import Obfuscate from 'react-obfuscate';
 import { FaEnvelopeO, FaTwitter, FaGithub } from 'react-icons/lib/fa/';
 import Helmet from 'react-helmet';
-import artisticink from '../images/pmu-artisticink.com.jpg';
+import artisticink from '../images/pmu-artisticink.com.2ad8bf9b.jpg';
 
 export default props => {
   return (
