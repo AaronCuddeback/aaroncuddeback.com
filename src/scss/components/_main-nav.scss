@@ -128,8 +128,8 @@
 }
 
 @media screen and (max-width: 600px) {
-  .c-main-nav__elem--hide-blog {
-    display: none;
+  #___gatsby > div > div.l-page-container.false > header > div > div > div {
+    width: 250px;
   }
   #___gatsby
     > div
