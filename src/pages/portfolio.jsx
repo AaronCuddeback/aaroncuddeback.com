@@ -16,7 +16,7 @@ export default props => {
       <br />
       <Container>
         <Row>
-          <Col xs="6" sm="5">
+          <Col xs="12" sm="5">
             <h1>Artistic Ink</h1>
             <p>
               Artistic Ink is a permanent cosmetics company which provides all
@@ -29,13 +29,13 @@ export default props => {
             {
               <img
                 src={require('../images/pmu-artisticink.jpg')}
-                width={320}
+                width={300}
                 height={900}
                 mode="fit"
               />
             }
           </Col>
-          <Col xs="6" sm="5">
+          <Col xs="12" sm="5">
             <h1>Rear Light Bar</h1>
             <p>
               Rear Light Bar is an offroad lightbar company which distributes
@@ -48,7 +48,7 @@ export default props => {
             {
               <img
                 src={require('../images/rlbstore-min.jpg')}
-                width={320}
+                width={300}
                 height={900}
                 mode="fit"
               />
@@ -56,7 +56,7 @@ export default props => {
           </Col>
         </Row>
         <Row>
-          <Col xs="6" sm="5">
+          <Col xs="12" sm="5">
             <br />
             <h1>CannaCura</h1>
             <p>
@@ -70,13 +70,13 @@ export default props => {
             {
               <img
                 src={require('../images/CannaCura.jpg')}
-                width={320}
+                width={300}
                 height={900}
                 mode="fit"
               />
             }
           </Col>
-          <Col xs="6" sm="5">
+          <Col xs="12" sm="5">
             <br />
             <h1>Flavolution</h1>
             <p>
@@ -90,7 +90,7 @@ export default props => {
             {
               <img
                 src={require('../images/Flavolution.gif')}
-                width={320}
+                width={300}
                 height={900}
                 mode="fit"
               />
@@ -98,7 +98,7 @@ export default props => {
           </Col>
         </Row>
         <Row>
-          <Col xs="6" sm="5">
+          <Col xs="12" sm="5">
             <br />
             <h1>Hangtown Range</h1>
             <p>
@@ -112,13 +112,13 @@ export default props => {
             {
               <img
                 src={require('../images/hangtownRange.jpg')}
-                width={320}
+                width={300}
                 height={1000}
                 mode="fit"
               />
             }
           </Col>
-          <Col xs="6" sm="5">
+          <Col xs="12" sm="5">
             <br />
             <h1>Norcal Drone Solutions</h1>
             <p>
@@ -132,7 +132,7 @@ export default props => {
             {
               <img
                 src={require('../images/hirenorcaldrones.gif')}
-                width={320}
+                width={300}
                 height={900}
                 mode="fit"
               />
