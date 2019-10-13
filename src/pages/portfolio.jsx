@@ -3,7 +3,7 @@ import HeadlineWithFocus from '../components/HeadlineWithFocus';
 import Obfuscate from 'react-obfuscate';
 import { FaEnvelopeO, FaTwitter, FaGithub } from 'react-icons/lib/fa/';
 import Helmet from 'react-helmet';
-import pmu-artisticink from '../images/pmu-artisticink.com.jpg';
+import artisticink from '../images/pmu-artisticink.com.jpg';
 
 export default props => {
   return (
@@ -15,7 +15,7 @@ export default props => {
       </HeadlineWithFocus>
       <ul>
         <li>
-          <img src={require('../images/pmu-artisticink.com.jpg') } />
+          <img src={require(artisticink)} />
         </li>
       </ul>
     </div>
