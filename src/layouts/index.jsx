@@ -1,4 +1,5 @@
 import React from 'react';
+import * as Sentry from '@sentry/browser';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
@@ -12,6 +13,10 @@ import RemarkScreenContainer from '../containers/RemarkScreenContainer';
 
 import MainFooter from '../components/MainFooter';
 import MainHeader from '../components/MainHeader';
+
+Sentry.init({
+  dsn: 'https://f934348251e7423d8f91a55ed05dd7be@sentry.io/1779649'
+});
 
 class DefaultLayout extends React.Component {
   render() {
