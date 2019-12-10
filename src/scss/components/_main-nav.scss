@@ -56,7 +56,7 @@
   }
 
   &:hover {
-    background: #fff;
+    background: #666;
 
     svg {
       color: $nav-link-active-color;
@@ -75,7 +75,7 @@
   }
   .c-main-nav__elem--close-link {
     visibility: visible;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #666;
   }
 }
 
