@@ -16,7 +16,27 @@ export default props => {
       <br />
       <Container>
         <Row>
-          <Col xs="12" sm="5">
+          <Col xs="12" sm="6">
+            <h1>Surcos Wines</h1>
+            {
+              <img
+                src={require('../images/surcos.jpg')}
+                width={300}
+                height={100}
+                mode="fit"
+              />
+            }
+            <p>
+              <br />
+              The journey of Surcos Wines began in 1999, Luies Gallegos, embraced working in the wine industry just like his grandfather and father. In essence, Bracero to Bottle. Here’s to family, friends, and time to work the Surcos.
+              <br />
+              <br />
+              <a href="http://gcw.pno.mybluehost.me/staging/6205/" target="_blank">
+                <center>View Site</center>
+              </a>
+            </p>
+          </Col>
+          <Col xs="12" sm="6">
             <h1>Artistic Ink</h1>
             {
               <img
@@ -33,11 +53,15 @@ export default props => {
               <br />
               <br />
               <a href="https://pmu-artisticink.com/" target="_blank">
+                <br></br>
+                <br></br>
                 <center>View Site</center>
               </a>
             </p>
           </Col>
-          <Col xs="12" sm="5">
+        </Row>
+        <Row>
+              <Col xs="12" sm="6">
             <h1>Rear Light Bar</h1>
             {
               <img
@@ -59,10 +83,7 @@ export default props => {
             </p>
             
           </Col>
-        </Row>
-        <Row>
-          <Col xs="12" sm="5">
-            <br />
+          <Col xs="12" sm="6">
             <h1>CannaCura</h1>
             {
               <img
@@ -79,11 +100,15 @@ export default props => {
               <br />
               <br />
               <a href="https://cannacura.net/" target="_blank">
+                <br />
                 <center>View Site</center>
               </a>
             </p>
           </Col>
-          <Col xs="12" sm="5">
+          
+        </Row>
+        <Row>
+          <Col xs="12" sm="6">
             <br />
             <h1>Flavolution</h1>
             {
@@ -106,9 +131,7 @@ export default props => {
             </p>
             
           </Col>
-        </Row>
-        <Row>
-          <Col xs="12" sm="5">
+          <Col xs="12" sm="6">
             <br />
             <h1>Hangtown Range</h1>
             {
@@ -125,13 +148,16 @@ export default props => {
               <br />
               <br />
               <a href="https://hangtownrange.com/" target="_blank">
+                
                 <center>View Site</center>
               </a>
             </p>
 
            
           </Col>
-          <Col xs="12" sm="5">
+          </Row>
+          <Row>
+          <Col xs="12" sm="6">
             <br />
             <h1>Norcal Drone Solutions</h1>
             {
