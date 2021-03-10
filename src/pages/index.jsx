@@ -22,7 +22,7 @@ const Index = props => {
           c-headline-focus--super-big 
         `}
       >
-        I'm a Software Developer
+        I am a Software Engineer
       </HeadlineWithFocus>
       <h2
         className={`

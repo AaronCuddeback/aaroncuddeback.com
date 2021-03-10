@@ -14,7 +14,7 @@ const ForHomePageContent = (
       website.
     </p>
     <p>
-      Currently, I'm open to <b>full time job</b> offers.
+      Currently, I'm open to <b>collaborating on </b> projects.
     </p>
     <p>
       If you believe I would be a good fit, drop me a message at{' '}
@@ -34,8 +34,8 @@ const ForContactPageContent = (
       <br /> Before you leave
     </p>
     <p>
-      I want you to remember that currently, I am open to <b>full time job</b>{' '}
-      offers.
+      I want you to remember that currently, I am open to <b>collaboration on</b>{' '}
+      projects.
     </p>
     <p>
       If you feel that I would be qualified, drop me a message at{' '}
