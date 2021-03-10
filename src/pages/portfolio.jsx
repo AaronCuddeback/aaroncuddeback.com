@@ -83,30 +83,30 @@ export default props => {
             </p>
             
           </Col>
-//            
-//           <Col xs="12" sm="6">
-//             <h1>CannaCura</h1>
-//             {
-//               <img
-//                 src={require('../images/cannacurabanner.jpg')}
-//                 width={300}
-//                 height={100}
-//                 mode="fit"
-//               />
-//             }
-//             <p>
-//             <br />
-//               An Ecommerce website dedicated to CBD products, it is a custom
-//               Wordpress design.
-//               <br />
-//               <br />
-//               <a href="https://cannacura.net/" target="_blank">
-//                 <br />
-//                 <center>View Site</center>
-//               </a>
-//             </p>
-//           </Col>
-//          
+            
+           {/* <Col xs="12" sm="6">
+             <h1>CannaCura</h1>
+             {
+              <img
+                src={require('../images/cannacurabanner.jpg')}
+                width={300}
+                height={100}
+                mode="fit"
+              />
+            }
+            <p>
+            <br />
+              An Ecommerce website dedicated to CBD products, it is a custom
+              Wordpress design.
+              <br />
+              <br />
+              <a href="https://cannacura.net/" target="_blank">
+                <br />
+                <center>View Site</center>
+              </a>
+            </p>
+           </Col> */}
+     
         </Row>
         <Row>
           <Col xs="12" sm="6">
