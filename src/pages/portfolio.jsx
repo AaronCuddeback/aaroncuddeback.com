@@ -83,6 +83,7 @@ export default props => {
             </p>
             
           </Col>
+           <!--  
           <Col xs="12" sm="6">
             <h1>CannaCura</h1>
             {
@@ -105,7 +106,7 @@ export default props => {
               </a>
             </p>
           </Col>
-          
+          -->
         </Row>
         <Row>
           <Col xs="12" sm="6">
