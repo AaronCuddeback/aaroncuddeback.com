@@ -12,7 +12,7 @@
     "@sentry/browser": "^5.7.0",
     "autoprefixer": "^7.1.6",
     "bootstrap": "^4.3.1",
-    "gatsby": "^1.9.73",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.22",
     "gatsby-plugin-dark-mode": "^1.1.0",
     "gatsby-plugin-google-analytics": "^1.0.13",
